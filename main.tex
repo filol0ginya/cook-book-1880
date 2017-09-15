@@ -1,80 +1,80 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,12pt]{book}
 
 \input{pre}
 
-\title{В.Татаркевич, т.2}
-
-\usepackage[backend=biber,bibencoding=utf8,sorting=ynt,maxcitenames=2,style=authoryear]{biblatex}
-\addbibresource{bib.bib}
-
-%%% Заголовок
-\author{Владислав Татаркевич}
-\title{История эстетики \\ 2}
-\date{}
-
 \begin{document}
 
-\maketitle
+\begin{titlepage} % Suppresses headers and footers on the title page
 
-\renewcommand{\thinspace}{\,}
+	\centering % Centre everything on the title page
+	
+	\scshape % Use small caps for all text on the title page
+	
+	\vspace*{\baselineskip} % White space at the top of the page
+	
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+	
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal rule
+	\rule{\textwidth}{0.4pt} % Thin horizontal rule
+	
+	\vspace{0.75\baselineskip} % Whitespace above the title
+	
+	{\LARGE русская \\ поваренная \\ книга } % Title
+	
+	\vspace{0.75\baselineskip} % Whitespace below the title
+	
+	\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal rule
+	\rule{\textwidth}{1.6pt} % Thick horizontal rule
+	
+	\vspace{2\baselineskip} % Whitespace after the title block
+	
+	%------------------------------------------------
+	%	Subtitle
+	%------------------------------------------------
+	
+	заключающая в себе более 700 правил приготовления различных блюд, скоромных и постных, простых и праздничных печений; запасов впрок; напитков и проч.%A Number of Fascinating and Life-changing Templates Presented in a Clear and Concise Way % Subtitle or further description
+	
+	\vspace*{3\baselineskip} % Whitespace under the subtitle
+	
+	%------------------------------------------------
+	%	Editor(s)
+	%------------------------------------------------
+	
+	 Составила на основании многолетней практики
+	
+	\vspace{0.5\baselineskip} % Whitespace before the editors
+	
+	{\scshape\Large Анна Макарова \\} % Editor list
+	
+	\vspace{0.5\baselineskip} % Whitespace below the editor list
+	
+	%\textit{The University of California \\ Berkeley} % Editor affiliation
+	
+	\vfill % Whitespace between editor names and publisher logo
+	
+	%------------------------------------------------
+	%	Publisher
+	%------------------------------------------------
+	
+	\vspace{0.3\baselineskip} % Whitespace under the publisher logo
+	
+	1880 % Publication year
+	
+	%{\small верстка Жаровой~А.~В.} % Вёрстка
+	
+\end{titlepage}
 
-\renewcommand{\thesection}{\alph{section}.}
+\renewcommand{\thesection}{\Roman {section}}
 
-\renewcommand{\thesubsection}{\arabic{subsection}.}
+\renewcommand{\thesubsection}{\arabic{subsection}}
 
-\renewcommand{\thesubsubsection}{\arabic {subsubsection}.}
+\renewcommand{\thesubsubsection}{\arabic {subsubsection}}
 
-\include{blag}
-\include{pred}
-
-\newpage
+\input{00}
+%\include{voc}
 
 \tableofcontents
-
-\newpage
-
-\part{Эстетика раннего Средневековья}
-\section{Эстетика Востока}
-
-\input{a01}
-\include{a01lit}
-\include{a02}
-\include{a02lit}
-\include{a03}
-
-\y{Тексты Греческих Отцов Церкви}\addcontentsline{toc}{subsubsection}{Тексты Греческих Отцов Церкви}
-
-\subsection{Эстетика Псевдо-Дионисия Ареопагита}\label{sec:pseudo_dionizy}
-
-\y{Тексты Псевдо-Дионисия Ареопагита}\addcontentsline{toc}{subsubsection}{Тексты Псевдо-Дионисия Ареопагита}
-
-\subsection{Византийская эстетика}\label{sec:bizantynistyka}
-
-\y{Тексты византийских теологов}\addcontentsline{toc}{subsubsection}{Тексты византийских теологов}
-
-\newpage
-\section{Эстетика Запада}
-
-\subsection{Эстетика св.~Августина}\label{subsec:sw_august}
-
-\y{Тексты Августина}\addcontentsline{toc}{subsubsection}{Тексты Августина}
-
-\subsection{Условия дальнейшего развития}
-
-\subsection{Эстетика от Боэция до Исидора}
-
-\y{Тексты Боэция, Кассиодора и Исидора}\addcontentsline{toc}{subsubsection}{Тексты Боэция, Кассиодора и Исидора}
-
-\subsection{Эстетика эпохи Каролингов}
-
-\y{Тексты учёных эпохи Каролингов}\addcontentsline{toc}{subsubsection}{Тексты учёных эпохи Каролингов}
-
-\subsection{Баланс раннехристианской эстетики}
-
-\newpage
-\part{Эстетика классического Средневековья}
-
-\newpage
-\printbibliography
 
 \end{document}

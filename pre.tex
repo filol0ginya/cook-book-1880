@@ -1,6 +1,5 @@
 %%% русский язык
-\usepackage[greek,english,russian]{babel}
-\usepackage[or]{teubner} %для греческого (см.выше)
+\usepackage[english,russian]{babel}
 \usepackage{cmap}					% поиск в PDF
 \usepackage[T2A]{fontenc}			% кодировка
 \usepackage[utf8]{inputenc}			% кодировка исходного текста
@@ -12,11 +11,11 @@
 \usepackage{fancyhdr} % Колонтитулы
  	\pagestyle{fancy}
  	\renewcommand{\headrulewidth}{0.5pt}  % Толщина линейки, отчеркивающей верхний колонтитул
- 	%\lfoot{Владислав Татаркевич}
- 	%\rfoot{История эстетики}
+ 	\lfoot{Анна Макарова}
+ 	\rfoot{Русская поваренная книга}
  	%\rhead{Глава}
- 	% \chead{Верхний в центре}
- 	%\lhead{\copyright Жарова~А.~В., перевод}
+ 	%\chead{Верхний в центре}
+ 	\lhead{}
  	% \cfoot{Нижний в центре} % По умолчанию здесь номер страницы
 
 \usepackage{lastpage} % Узнать, сколько всего страниц в документе.
@@ -34,7 +33,7 @@
     pdfproducer={Производитель}, % Производитель
     pdfkeywords={keyword1} {key2} {key3}, % Ключевые слова
     colorlinks=true,       	% false: ссылки в рамках; true: цветные ссылки
-    linkcolor=red,          % внутренние ссылки
+    linkcolor=black,          % внутренние ссылки
     citecolor=yellow,       % на библиографию
     filecolor=magenta,      % на файлы
     urlcolor=purple         % на URL
@@ -42,36 +41,6 @@
 
 \usepackage{csquotes} % Инструменты для ссылок
 
-
-\newcounter{nz}[subsection] % счётчик параграфов
-
-\newcommand{\z}[1]{%        % оформление параграфов
-
-\addtocounter{nz}{1}         
-\textbf{\S \arabic{nz}. #1%
-}}
-
-\newcounter{ny}             % счётчик для подзаголовков с литературой
-
-\newcommand{\y}[1]{%
-
-\addtocounter{ny}{1}
-\vspace{2.5ex} {\textbf {{\Alph{ny}. #1%
-}}}}
-
-\newcounter{nx}             % счётчик цитат из Писания внутри списка литературы
-
-\newcommand{\x}[1]{%
-
-\addtocounter{nx}{1}
-\textbf{\arabic{nx}. #1%
-}}
-
-%%% Дополнительная работа с математикой
-\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % AMS
-
-%% Свои команды
-\DeclareMathOperator{\sgn}{\mathop{sgn}}
 
 %%% Работа с картинками
 %\usepackage{graphicx}  % Для вставки рисунков
@@ -85,17 +54,6 @@
 %\usepackage{longtable}  % Длинные таблицы
 %\usepackage{multirow} % Слияние строк в таблице
 
-%%% Теоремы
-\theoremstyle{plain} % Это стиль по умолчанию, его можно не переопределять.
-\newtheorem{theorem}{}%[section]
-%\newtheorem{proposition}[theorem]{Утверждение}
- 
-%\theoremstyle{definition} % "Определение"
-%\newtheorem{corollary}{Следствие}[theorem]
-%\newtheorem{problem}{Задача}[section]
- 
-%\theoremstyle{remark} % "Примечание"
-%\newtheorem*{nonum}{Решение}
 
 %\usepackage{footmisc} % для сносок (тест)
 
@@ -103,4 +61,3 @@
 %\usepackage{cite} % Работа с библиографией
 %\usepackage[superscript]{cite} % Ссылки в верхних индексах
 %\usepackage[nocompress]{cite} % 
-%\usepackage{csquotes} % Еще инструменты для ссылок
